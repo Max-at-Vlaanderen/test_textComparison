@@ -1,0 +1,49 @@
+---
+layout: none
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Carbon Farming – Side by Side</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid #ddd;
+      padding: 12px;
+      border-radius: 6px;
+      background: #fff;
+      overflow-wrap: anywhere;
+    }
+    .panel h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="columns">
+    <div class="panel">
+      <h2>CarbonFarming_01.md</h2>
+      {% capture v1 %}{% include_relative CarbonFarming_01.md %}{% endcapture %}
+      {{ v1 | markdownify }}
+    </div>
+    <div class="panel">
+      <h2>CarbonFarming_02.md</h2>
+      {% capture v2 %}{% include_relative CarbonFarming_02.md %}{% endcapture %}
+      {{ v2 | markdownify }}
+    </div>
+    <div class="panel">
+      <h2>CarbonFarming_03.md</h2>
+      {% capture v3 %}{% include_relative CarbonFarming_03.md %}{% endcapture %}
+      {{ v3 | markdownify }}
+    </div>
+  </div>
+</body>
+</html>
