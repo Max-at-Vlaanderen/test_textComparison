@@ -3,7 +3,8 @@
 Think of it as farming with a dual purpose:
 1.  **Producing food and fiber** (its traditional role).
 2.  **Capturing and storing atmospheric carbon** (its new, climate-friendly role).
----
+
+
 ### How Does It Work? The Basic Science
 The process relies on the natural carbon cycle:
 1.  **Photosynthesis:** Plants absorb CO₂ from the air.
