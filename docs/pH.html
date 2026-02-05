@@ -18,8 +18,8 @@ layout: none
                    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       line-height: 1.6;
       font-size: 16px;
-      color: #24292f;      /* GitHub text color */
-      background: #f6f8fa; /* GitHub page background */
+      color: #24292f;      
+      background: #f6f8fa; 
       padding: 20px;
     }
     .columns {
@@ -60,22 +60,22 @@ layout: none
 <body>
   <div class="columns">
     <div class="panel">
-      <h2>CarbonFarming_01.md</h2>
-      {% capture v1 %}{% include_relative CarbonFarming_01.md %}{% endcapture %}
+      <h2>[01]</h2>
+      {% capture v1 %}{% include_relative ph_01.md %}{% endcapture %}
       <article class="markdown-body">
         {{ v1 | markdownify }}
       </article>
     </div>
     <div class="panel">
-      <h2>CarbonFarming_02.md</h2>
-      {% capture v2 %}{% include_relative CarbonFarming_02.md %}{% endcapture %}
+      <h2>[02]</h2>
+      {% capture v2 %}{% include_relative ph_02.md %}{% endcapture %}
       <article class="markdown-body">
         {{ v2 | markdownify }}
       </article>
     </div>
     <div class="panel">
-      <h2>CarbonFarming_03.md</h2>
-      {% capture v3 %}{% include_relative CarbonFarming_03.md %}{% endcapture %}
+      <h2>[03]</h2>
+      {% capture v3 %}{% include_relative ph_03.md %}{% endcapture %}
       <article class="markdown-body">
         {{ v3 | markdownify }}
       </article>
