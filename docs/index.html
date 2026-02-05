@@ -8,8 +8,12 @@ layout: none
   <meta charset="utf-8">
   <title>Carbon Farming – Side by Side</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- GitHub-flavored markdown CSS so the rendered markdown uses the original markdown fonts/styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+
   <style>
-     body {
+    body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
                    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       line-height: 1.6;
@@ -28,12 +32,27 @@ layout: none
       border: 1px solid #d0d7de;
       padding: 12px;
       border-radius: 6px;
-      background #ffffff;
+      background: #ffffff;
       overflow-wrap: anywhere;
       font-family: inherit;
     }
     .panel h2 {
       margin-top: 0;
+    }
+
+    /* Keep markdown content from touching the panel edges and inherit the GitHub markdown typography */
+    .markdown-body {
+      box-sizing: border-box;
+      padding: 12px 6px;
+      background: transparent;
+      color: inherit;
+      font-family: inherit;
+    }
+
+    /* Optional: make code blocks wrap nicely inside panels */
+    .markdown-body pre {
+      white-space: pre-wrap;
+      word-break: break-word;
     }
 
   </style>
@@ -43,17 +62,23 @@ layout: none
     <div class="panel">
       <h2>CarbonFarming_01.md</h2>
       {% capture v1 %}{% include_relative CarbonFarming_01.md %}{% endcapture %}
-      {{ v1 | markdownify }}
+      <article class="markdown-body">
+        {{ v1 | markdownify }}
+      </article>
     </div>
     <div class="panel">
       <h2>CarbonFarming_02.md</h2>
       {% capture v2 %}{% include_relative CarbonFarming_02.md %}{% endcapture %}
-      {{ v2 | markdownify }}
+      <article class="markdown-body">
+        {{ v2 | markdownify }}
+      </article>
     </div>
     <div class="panel">
       <h2>CarbonFarming_03.md</h2>
       {% capture v3 %}{% include_relative CarbonFarming_03.md %}{% endcapture %}
-      {{ v3 | markdownify }}
+      <article class="markdown-body">
+        {{ v3 | markdownify }}
+      </article>
     </div>
   </div>
 </body>
