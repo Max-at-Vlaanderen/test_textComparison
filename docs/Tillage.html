@@ -7,9 +7,15 @@ layout: none
 <head>
   <meta charset="utf-8">
   <title>LLM arena</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- GitHub-flavored markdown CSS so the rendered markdown uses the original markdown fonts/styles -->
+  <!-- Emoji favicon -->
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='70' font-size='80' text-anchor='middle'>🌱</text></svg>">
+
+  <!-- GitHub-flavored markdown CSS -->
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
 
   <style>
@@ -65,21 +71,21 @@ layout: none
   <div class="columns">
     <div class="panel">
       <h2>[01]</h2>
-      {% capture v1 %}{% include_relative CarbonFarming_01.md %}{% endcapture %}
+      {% capture v1 %}{% include_relative Tillage_01.md %}{% endcapture %}
       <article class="markdown-body">
         {{ v1 | markdownify }}
       </article>
     </div>
     <div class="panel">
       <h2>[02]</h2>
-      {% capture v2 %}{% include_relative CarbonFarming_02.md %}{% endcapture %}
+      {% capture v2 %}{% include_relative Tillage_02.md %}{% endcapture %}
       <article class="markdown-body">
         {{ v2 | markdownify }}
       </article>
     </div>
     <div class="panel">
       <h2>[03]</h2>
-      {% capture v3 %}{% include_relative CarbonFarming_03.md %}{% endcapture %}
+      {% capture v3 %}{% include_relative Tillage_03.md %}{% endcapture %}
       <article class="markdown-body">
         {{ v3 | markdownify }}
       </article>

@@ -6,10 +6,16 @@ layout: none
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>LLM comparison</title>
+  <title>LLM arena</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=<text y='.9em' font-size='90'>🌱</text></svg>">
-  <!-- GitHub-flavored markdown CSS so the rendered markdown uses the original markdown fonts/styles -->
+
+  <!-- Emoji favicon -->
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='70' font-size='80' text-anchor='middle'>🌱</text></svg>">
+
+  <!-- GitHub-flavored markdown CSS -->
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
 
   <style>
@@ -35,6 +41,8 @@ layout: none
       background: #ffffff;
       overflow-wrap: anywhere;
       font-family: inherit;
+      box-sizing: border-box;
+      min-width: 0;
     }
     .panel h2 {
       margin-top: 0;
@@ -47,6 +55,8 @@ layout: none
       background: transparent;
       color: inherit;
       font-family: inherit;
+      width: 100%;
+      min-width: 0;
     }
 
     /* Optional: make code blocks wrap nicely inside panels */
